@@ -1,0 +1,73 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eid Surprise 🎁</title>
+
+  <!-- CSS file connect -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌙 Eid Mubarak!</h1>
+    <p class="subtitle">Click below to get your surprise 🎁</p>
+
+    <button onclick="showSalami()">Get Salami 💸</button>
+
+    <div id="result" class="hidden">
+      <h2>🎉 You got 500 BDT!</h2>
+      <p>Send your bKash number to claim 😉</p>
+    </div>
+  </div>
+
+  <!-- JS file connect -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+style.css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #FFD700;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+.hidden {
+  display: none;
+}
+script.js
+function showSalami() {
+  document.getElementById("result").classList.remove("hidden");
+}
